@@ -1,0 +1,47 @@
+body, main {
+    display: flex;
+}
+body {
+    flex-direction: column;
+}
+header {
+    background-color: tan;
+    box-shadow: 0 4px 4px tomato;
+    border-radius: 10px;
+}
+main {
+    flex-direction: row;
+    flex: auto;
+    overflow-wrap: anywhere;
+    border-radius: 20px;
+    
+    h1, h2, h3 {
+        box-shadow: 0 4px 4px tomato;
+        border-radius: 10px;
+    }
+    article {
+        flex: 2;
+        img {
+            width: 200px;
+            border-radius:  20px;
+            box-shadow: 0 4px 8px;
+            margin-bottom: 20px;
+        }
+    }
+    table {
+        background-color: tomato;
+        border: dashed 2px tan;
+        border-radius: 10px;
+        td {
+            border: dotted 2px tan;
+        }
+    }
+    aside {
+        box-shadow: 0 4px 8px black;
+        background-color: tomato;
+        p {
+            box-shadow: 0 4px 8px burlywood;
+        }
+        flex: 1;
+    }
+}
