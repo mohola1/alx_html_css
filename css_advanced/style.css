@@ -1,0 +1,267 @@
+body {
+    color: #333;
+    padding: 0;
+}
+.wall {
+    background-image: url(images/Object.png);
+    background-size: cover;
+}
+/* Header */
+header {
+    background-color: transparent;
+    position: sticky;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        ul {
+            display: flex;
+            gap: 50px;
+            font-family: "Underdog", system-ui;
+            font-weight: lighter;
+            list-style: none;
+            li a{
+                color: white;
+                text-decoration: none;
+            }
+            :hover {
+                color: #333;
+            }
+        }
+    }
+}
+/* Main */
+.picture {
+    text-align: center;
+    line-height: 1.5;
+    min-height: 500px;
+    padding: 100px;
+    h1 {
+        font-family: "Oswald", sans-serif;
+        font-weight: bolder;
+        font-size: 70px;
+        color: white;
+        margin-bottom: 0;
+    }
+    span {
+        color: white;
+        margin-bottom: 20px;
+        font-family: "Dancing Script", cursive;
+    }
+}
+.button {
+    background: #9370DB;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 40px 30px;
+    color: white;
+    border: none;
+}
+/*Biography*/
+.learning {
+    line-height: 1.5;
+    padding: 50px;
+    h2 {
+        text-align: center;
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        span {
+            color: #9370DB;
+            font-family: "Bebas Neue", sans-serif;
+        }
+    }
+}
+.bio {
+    display: flex;
+    justify-content: space-around;
+    .bioimage {
+        width: 100px;
+        height: 100px;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px white;
+    }
+    h3 {
+        color: white;
+        font-size: 20px
+    }
+    p {
+        color: ghostwhite;
+    }
+}
+/* Tutorials */
+.tutorials {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 10px;
+    background-color: #9370DB;
+    color: white;
+    line-height: 1;
+    .tutorial-image {
+        flex: 1;
+        text-align: right;
+        img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+    }
+    .tutorials-qoute {
+        line-height: 1;
+        flex: 2;
+        blockquote {
+            text-align: left;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h3 {
+            font-family: "Bebas Neue", sans-serif;
+            padding-left: 25px;
+        }
+        p {
+           font-family: "Dancing Script", cursive;
+           padding-left: 25px; 
+        }
+    }
+} 
+.forth {
+    h2 {
+        color: black;
+        font-family: "Underdog", system-ui;
+        font-weight: bolder;
+        text-align: center;
+        position: relative;
+        top: 30px;
+        span {
+            color: #9370DB;
+        }
+    }
+    .Tutorial {
+        display: flex;
+        gap: 20px;
+        line-height: 1;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        height: 80vh;
+        h3 {
+            font-family: "Underdog", system-ui;
+            font-weight: bolder;
+        }
+        p {
+            font-family: "Dancing Script", cursive;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .tab {
+            width: 200px;
+            h4 {
+                position: relative;
+                bottom: 80px;
+            }
+        }
+        .time {
+            position: relative;
+            bottom: 120px;
+            left: 150px;
+        }
+        .move {
+            position: relative;
+            bottom: 195px;
+            left: 70px;
+        }
+        .tab-image {
+            width: 200px;
+            border-radius: 20px;
+        }
+        .min {
+            display: flex;
+            position: relative;
+            bottom: 90px;
+            span {
+                color: #9370DB;
+                display: flex;
+                
+            }
+            
+        }
+        
+    }
+}  
+.membership {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    h2,p{
+        color: darkgray;
+    }
+    span {
+        color: #9370DB;
+    }
+    h3 {
+        color: white;
+    }
+}
+.smile {
+    display: flex;
+    justify-content: center;
+}
+.lorem {
+    width: 200px;
+}
+.question {
+    padding: 20px;
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: lighter;
+    }
+}
+.how-body {
+    display: flex;
+    justify-content: space-around;
+    h3 {
+        color: black;
+    }
+    div {
+        color: rgb(73, 70, 70);
+    }
+}
+.how1 {
+    width: 400px;
+}
+.how2 {
+    width: 400px;
+}
+/* Footer */
+footer {
+    background-color: black;
+}
+.last {
+    justify-items: center;
+    p {
+        text-align: center;
+    }
+}
+.last1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    i {
+        color: white;
+    }
+}
+/* Responsive */
+@media (max-width: 800px) {
+    .bio {
+        flex-direction: column;
+    }
+    .Tutorial {
+        flex-direction: column;
+    }
+    .membership {
+        flex-direction: column;
+    }
+}
